@@ -6,8 +6,8 @@ export default defineUserConfig({
   base: "/website/",
 
   lang: "zh-CN",
-  title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  title: "我的世界不错",
+  description: "莫道桑榆晚，为霞尚满天。",
 
   theme,
 

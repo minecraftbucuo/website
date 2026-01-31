@@ -1,16 +1,14 @@
 ---
 home: true
-portfolio: true
-title: 档案主页
+title: 我的档案
 icon: house
 welcome: 👋 你好，我是
-name: 江户川柯南
-avatar: https://theme-hope-assets.vuejs.press/hero/conan.png
+name: 我的世界不错
+avatar: /assets/image/avatar.png
 
 titles:
-  - 天才少年侦探
-  - 小兰的青梅竹马
-  - 黑衣组织的最大对手
+  - 巅峰企业创始人
+  - 阿二帮创始人
 
 footer: false
 ---
@@ -22,3 +20,13 @@ footer: false
 要使用此布局，你应该在页面 Frontmatter 中设置 `home: true` 和 `portfolio: true`。
 
 相关配置文档请见 [档案主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html#档案类型主页)。
+
+
+```c++
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!" << std::endl;
+  return 0;
+}
+```
