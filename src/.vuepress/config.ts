@@ -10,7 +10,7 @@ export default defineUserConfig({
   description: "莫道桑榆晚，为霞尚满天。",
 
   theme,
-
+  
   // 和 PWA 一起启用
   // shouldPrefetch: false,
 });

@@ -2,9 +2,8 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/portfolio",
-  "/temp/",
-  "/demo/",
+  "/算法相关/",
+  "/about.md",
   // {
   //   text: "指南",
   //   icon: "lightbulb",

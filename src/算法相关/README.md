@@ -3,7 +3,7 @@ title: 算法相关
 index: false
 icon: laptop-code
 category:
-  - 使用指南
+  - 算法
 ---
 
 <Catalog />
