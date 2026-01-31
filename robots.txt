@@ -1,4 +1,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-docs-demo.netlify.app/website/sitemap.xml
+Sitemap: https://minecraftbucuo.github.io/website/website/sitemap.xml
