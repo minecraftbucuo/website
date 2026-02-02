@@ -3,6 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/算法相关/",
+  "/技术相关/",
   "/about.md",
   // {
   //   text: "指南",

@@ -117,21 +117,21 @@ export default hopeTheme({
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
 
-//     <script src="https://giscus.app/client.js"
-//         data-repo="minecraftbucuo/website"
-//         data-repo-id="R_kgDORFbLSA"
-//         data-category="Announcements"
-//         data-category-id="DIC_kwDORFbLSM4C1sK7"
-//         data-mapping="pathname"
-//         data-strict="0"
-//         data-reactions-enabled="1"
-//         data-emit-metadata="0"
-//         data-input-position="bottom"
-//         data-theme="preferred_color_scheme"
-//         data-lang="zh-CN"
-//         crossorigin="anonymous"
-//         async>
-//     </script>
+    //     <script src="https://giscus.app/client.js"
+    //         data-repo="minecraftbucuo/website"
+    //         data-repo-id="R_kgDORFbLSA"
+    //         data-category="Announcements"
+    //         data-category-id="DIC_kwDORFbLSM4C1sK7"
+    //         data-mapping="pathname"
+    //         data-strict="0"
+    //         data-reactions-enabled="1"
+    //         data-emit-metadata="0"
+    //         data-input-position="bottom"
+    //         data-theme="preferred_color_scheme"
+    //         data-lang="zh-CN"
+    //         crossorigin="anonymous"
+    //         async>
+    //     </script>
 
     comment: {
       provider: "Giscus",
