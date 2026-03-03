@@ -31,7 +31,6 @@ jobs:
       - name: 安装依赖
         run: |
           corepack enable
-          npm install
           npm ci
 
       - name: 构建文档
