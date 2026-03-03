@@ -4,6 +4,7 @@ export default navbar([
   "/",
   "/算法相关/",
   "/技术相关/",
+  "/数学相关/",
   "/about.md",
   // {
   //   text: "指南",
