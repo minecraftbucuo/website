@@ -26,14 +26,14 @@ export default hopeTheme({
   // displayFooter: true,
 
   // 加密配置
-  encrypt: {
-    config: {
-      "/算法相关/": {
-        password: ["minec", "123456"],
-        hint: "密码很简单，很容易猜出来",
-      },
-    },
-  },
+  // encrypt: {
+  //   config: {
+  //     "/算法相关/": {
+  //       password: ["minec", "123456"],
+  //       hint: "密码很简单，很容易猜出来",
+  //     },
+  //   },
+  // },
 
   // 不显示编辑链接
   editLink: false,
