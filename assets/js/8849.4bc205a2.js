@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvuepress_theme_hope_template=self.webpackChunkvuepress_theme_hope_template||[]).push([[8849],{8849(e,t,s){s.d(t,{createArchitectureServices:()=>p.b});var p=s(7480);s(3060),s(9218),s(6259),s(8517),s(8840)}}]);
