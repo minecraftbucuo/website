@@ -214,4 +214,4 @@ $$\le \max_{i \le k < j} \left( \frac{|u_{k+1} - u_k|}{v_{k+1} - v_k} \right)$$
 ## 感想：
 还是要大胆猜想啊。
 
-<p align="right">最后更新于：2026-03-25</p>
+<p align="right">最后更新于：2026-04-06</p>
