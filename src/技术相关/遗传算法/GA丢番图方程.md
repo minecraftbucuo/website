@@ -1,4 +1,4 @@
-# 遗传算法求解丢番图方程（2026年8月13日）
+# 遗传算法求解丢番图方程（2026.8.13）
 
 > [“遗传算法”](https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/lessons/6-Other/21-GeneticAlgorithms/README.md)中留下的作业，自己尝试了做一下，以更加理解遗传算法。
 > 代码基本为手写，叫AI优化了一下，文字描述为AI生成。
