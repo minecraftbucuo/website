@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="380" viewBox="0 0 500 380" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">
+  <!-- 连线：左孩子一律向左下方、右孩子一律向右下方，长短与方向对称 -->
+  <line x1="222.0" y1="69.4"  x2="148.0" y2="120.6" stroke="#a6a6a6" stroke-width="2"/>
+  <line x1="278.0" y1="69.4"  x2="352.0" y2="120.6" stroke="#a6a6a6" stroke-width="2"/>
+  <line x1="354.7" y1="162.8" x2="305.3" y2="207.2" stroke="#a6a6a6" stroke-width="2"/>
+  <line x1="259.1" y1="256.8" x2="228.4" y2="296.3" stroke="#a6a6a6" stroke-width="2"/>
+  <line x1="300.9" y1="256.8" x2="331.6" y2="296.3" stroke="#a6a6a6" stroke-width="2"/>
+
+  <!-- 节点：1(下标2) -->
+  <circle cx="250" cy="52" r="34" fill="#7cc4f7" stroke="#2b7cb8" stroke-width="1.5"/>
+  <text x="250" y="48" text-anchor="middle" font-size="15" font-weight="bold" fill="#09304d">1</text>
+  <text x="250" y="64" text-anchor="middle" font-size="11" fill="#09304d">(下标2)</text>
+
+  <!-- 节点：3(下标1) -->
+  <circle cx="120" cy="142" r="34" fill="#ffe08a" stroke="#c8a21a" stroke-width="1.5"/>
+  <text x="120" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#4a3a00">3</text>
+  <text x="120" y="154" text-anchor="middle" font-size="11" fill="#4a3a00">(下标1)</text>
+
+  <!-- 节点：2(下标6) -->
+  <circle cx="380" cy="142" r="34" fill="#8ee6a6" stroke="#1f7a3d" stroke-width="1.5"/>
+  <text x="380" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f3d1c">2</text>
+  <text x="380" y="154" text-anchor="middle" font-size="11" fill="#0f3d1c">(下标6)</text>
+
+  <!-- 节点：4(下标4) -->
+  <circle cx="280" cy="230" r="34" fill="#ffc7c2" stroke="#c0352a" stroke-width="1.5"/>
+  <text x="280" y="226" text-anchor="middle" font-size="15" font-weight="bold" fill="#4d0f0a">4</text>
+  <text x="280" y="242" text-anchor="middle" font-size="11" fill="#4d0f0a">(下标4)</text>
+
+  <!-- 节点：6(下标3) -->
+  <circle cx="210" cy="318" r="30" fill="#d9c7ff" stroke="#6a4ab8" stroke-width="1.5"/>
+  <text x="210" y="315" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c1c55">6</text>
+  <text x="210" y="330" text-anchor="middle" font-size="11" fill="#2c1c55">(下标3)</text>
+
+  <!-- 节点：5(下标5) -->
+  <circle cx="350" cy="318" r="30" fill="#c7e6a9" stroke="#5b8c1f" stroke-width="1.5"/>
+  <text x="350" y="315" text-anchor="middle" font-size="14" font-weight="bold" fill="#213604">5</text>
+  <text x="350" y="330" text-anchor="middle" font-size="11" fill="#213604">(下标5)</text>
+</svg>
