@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://github.com/minecraftbucuo",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.svg",
 
   repo: "https://github.com/minecraftbucuo/website",
 

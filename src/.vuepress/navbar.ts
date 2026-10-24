@@ -1,11 +1,11 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  "/",
-  "/算法相关/",
-  "/技术相关/",
-  "/数学相关/",
-  "/about.md",
+  { text: "项目主页", icon: "house", link: "/" },
+  { text: "算法相关", icon: "flag-checkered", link: "/算法相关/" },
+  { text: "技术相关", icon: "screwdriver-wrench", link: "/技术相关/" },
+  { text: "数学相关", icon: "infinity", link: "/数学相关/" },
+  { text: "关于本站", icon: "book", link: "/about.md" },
   // {
   //   text: "指南",
   //   icon: "lightbulb",
