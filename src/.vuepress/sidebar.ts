@@ -5,4 +5,5 @@ export default sidebar({
   "/算法相关": "structure",
   "/技术相关": "structure",
   "/数学相关": "structure",
+  "/趣味游戏": "structure",
 });

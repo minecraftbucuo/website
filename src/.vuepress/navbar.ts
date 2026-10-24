@@ -5,6 +5,7 @@ export default navbar([
   { text: "算法相关", icon: "flag-checkered", link: "/算法相关/" },
   { text: "技术相关", icon: "screwdriver-wrench", link: "/技术相关/" },
   { text: "数学相关", icon: "infinity", link: "/数学相关/" },
+  { text: "趣味游戏", icon: "gamepad", link: "/趣味游戏/" },
   { text: "关于本站", icon: "book", link: "/about.md" },
   // {
   //   text: "指南",
