@@ -47,7 +47,7 @@
           class="hanoi-disk"
           :class="{ lifted: isLifted(d) }"
           :style="diskStyle(d)"
-        ></div>
+        >{{ d }}</div>
       </template>
 
       <div v-if="phase === 'demo'" class="hanoi-chip">🎬 递归演示中…</div>
@@ -181,6 +181,7 @@ function diskStyle(d: number) {
     width: `${width}%`,
     height: `${diskH.value - 4}px`,
     background: `hsl(${198 + ((d - 1) * 150) / Math.max(1, n.value - 1)}, 68%, 58%)`,
+    fontSize: `${Math.max(11, Math.round(diskH.value * 0.45))}px`,
     zIndex: isLifted(d) ? 20 : 5,
   };
 }
@@ -516,6 +517,13 @@ onBeforeUnmount(() => {
 .hanoi-disk {
   position: absolute;
   transform: translateX(-50%);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  user-select: none;
+  pointer-events: none;
   border-radius: 999px;
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: left 0.28s ease, top 0.28s ease, box-shadow 0.2s;
