@@ -1,7 +1,7 @@
 ---
 title: 数学相关
 index: false
-icon: laptop-code
+icon: infinity
 category:
   - 数学
 ---

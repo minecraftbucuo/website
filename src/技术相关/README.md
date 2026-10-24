@@ -1,7 +1,7 @@
 ---
 title: 技术相关
 index: false
-icon: laptop-code
+icon: screwdriver-wrench
 category:
   - 技术
 ---
