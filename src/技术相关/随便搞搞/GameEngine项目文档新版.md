@@ -108,7 +108,7 @@ timeline
 
 > **可编译 · 可运行 · 可回滚** —— 每步 = 一次 git commit = 一个原子操作，单一职责、不破坏既有契约
 
-十一步走完（详见 [sdl3-migration-plan.md](sdl3-migration-plan.md)，含全部实施记录）：
+十一步走完（详见 `sdl3-migration-plan.md`，含全部实施记录）：
 
 | 步骤 | 内容 | 关键产物 / 影响 |
 |---|---|---|
@@ -126,7 +126,7 @@ timeline
 
 ### 第三阶段：改革二 —— 网络层 sfml-network → SDL_net 3（同日收官）
 
-渲染迁移完成后，SFML 在仓库里只剩网络一块，当天乘胜追击（详见 [sdl3-net-migration-plan.md](sdl3-net-migration-plan.md)）。采用**两段式切换**：
+渲染迁移完成后，SFML 在仓库里只剩网络一块，当天乘胜追击（详见 `sdl3-net-migration-plan.md`）。采用**两段式切换**：
 
 ```
 N1  eng::Packet 落盘（自研序列化容器，线格式逐字节复刻 sf::Packet，纯新增零引用）
@@ -142,8 +142,8 @@ N5  SFML 全仓移除：lib/ 目录删除，源码与 CMake 零引用（7917945 
 
 SDL 化的红利立刻兑现：
 
-1. **Emscripten 移植**（[wasm-web-port-plan.md](wasm-web-port-plan.md)）：CMake 平台分支、主循环回调化（rAF）、引擎堆分配常驻、资源打进 `.data` 虚拟盘、无裸 socket 时降级为 **Local 本地单机模式**；
-2. **WebSocket 联机**（[websocket-net-plan.md](websocket-net-plan.md)）：`TcpClient` 增加 `__EMSCRIPTEN__` 分支；服务端前挂 websockify 桥还原裸 TCP，游戏服务端对两种玩家一视同仁；
+1. **Emscripten 移植**（`wasm-web-port-plan.md`）：CMake 平台分支、主循环回调化（rAF）、引擎堆分配常驻、资源打进 `.data` 虚拟盘、无裸 socket 时降级为 **Local 本地单机模式**；
+2. **WebSocket 联机**（`websocket-net-plan.md`）：`TcpClient` 增加 `__EMSCRIPTEN__` 分支；服务端前挂 websockify 桥还原裸 TCP，游戏服务端对两种玩家一视同仁；
 3. **断线体验**（N4）：CONNECTION LOST 提示层、场景会话重置防"双马里奥"；
 4. **自动寻址**：Web 版 `serverIp: "auto"` 连页面自身来源，配合"桥发页面"部署拓扑零配置开服。
 
@@ -865,7 +865,7 @@ flowchart LR
     D["桌面客户端"] -->|"直连 TCP :6666"| S
 ```
 
-`TcpClient` 的 `__EMSCRIPTEN__` 分支用 `<emscripten/websocket.h>` 实现（选型讨论见 [websocket-net-plan.md](websocket-net-plan.md)，方案 A′）：
+`TcpClient` 的 `__EMSCRIPTEN__` 分支用 `<emscripten/websocket.h>` 实现（选型讨论见 `websocket-net-plan.md`，方案 A′）：
 
 - **异步连接**：浏览器无同步等待点，`connect()` 创建 WS 即乐观返回 Done；真实就绪由 onopen/onclose/onerror/onmessage 四个回调推进 holder 状态位，`receive()/tryFlush()` 把 open/closed/errored 折算成既有四态——游戏层契约零变化；
 - **收**：onmessage 回调只搬字节进 staged 暂存（回调内禁止发送），receive 时并入拆帧缓冲——WS 消息边界与 TCP 流的差异被状态机天然吸收；
@@ -1179,7 +1179,7 @@ flowchart LR
 
 - 桥只服务网页玩家，桌面客户端 TCP 直连，**服务端对两种玩家一视同仁**；
 - `serverIp="auto"`：网页连页面自身来源——配合"桥顺带发页面"的部署做到零配置；
-- 详细部署手册（朋友开服 / VPS nginx+systemd+TLS / 排障）见 [web-multiplayer-deploy.md](web-multiplayer-deploy.md)。
+- 详细部署手册（朋友开服 / VPS nginx+systemd+TLS / 排障）见 `web-multiplayer-deploy.md`。
 
 ---
 
@@ -1430,7 +1430,7 @@ renderer.drawTexture(h, eng::FloatRect(0, 0, 16, 16),          // 图集源矩�
 <details open>
 <summary><b>为什么从 SFML 迁移到 SDL？</b></summary>
 
-SFML 不支持 Emscripten（Web 版无从谈起）；SDL3 官方支持且生态更全（net/ttf/mixer/image 同门配套）。迁移方法论与全程记录见 [sdl3-migration-plan.md](sdl3-migration-plan.md)。
+SFML 不支持 Emscripten（Web 版无从谈起）；SDL3 官方支持且生态更全（net/ttf/mixer/image 同门配套）。迁移方法论与全程记录见 `sdl3-migration-plan.md`。
 
 </details>
 
@@ -1468,13 +1468,13 @@ Web 版 config.json 打进 .data 包（只读虚拟盘），设置界面的保�
 |---|---|
 | [README](../README.md) | 构建 / 运行 / 部署速查 |
 | 本文（project-overview.md） | 项目介绍、演变史、架构、子系统、开发指南 |
-| [sdl3-migration-plan.md](sdl3-migration-plan.md) | 改革一全过程：现状分析、技术决策、Step 0~11 实施记录与踩坑 |
-| [sdl3-net-migration-plan.md](sdl3-net-migration-plan.md) | 改革二全过程：两段式切换（N1~N5） |
-| [wasm-web-port-plan.md](wasm-web-port-plan.md) | WASM 移植：决策记录、Step 0~9、体积基线 |
-| [websocket-net-plan.md](websocket-net-plan.md) | WebSocket 联机选型（A′）与 N0~N5 实施记录 |
-| [web-multiplayer-deploy.md](web-multiplayer-deploy.md) | WEB 联机部署手册：朋友开服 / VPS / 排障 |
-| [box2d-integration-plan.md](box2d-integration-plan.md) | Box2D 接入设计与决策 |
-| [settings-scene-plan.md](settings-scene-plan.md) | 设置界面设计 |
+| `sdl3-migration-plan.md` | 改革一全过程：现状分析、技术决策、Step 0~11 实施记录与踩坑 |
+| `sdl3-net-migration-plan.md` | 改革二全过程：两段式切换（N1~N5） |
+| `wasm-web-port-plan.md` | WASM 移植：决策记录、Step 0~9、体积基线 |
+| `websocket-net-plan.md` | WebSocket 联机选型（A′）与 N0~N5 实施记录 |
+| `web-multiplayer-deploy.md` | WEB 联机部署手册：朋友开服 / VPS / 排障 |
+| `box2d-integration-plan.md` | Box2D 接入设计与决策 |
+| `settings-scene-plan.md` | 设置界面设计 |
 
 ---
 
