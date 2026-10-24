@@ -1,1 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" class="icon" viewBox="0 0 3280.944 2800"><path fill="#41b883" d="M1645.332 601.004h375.675L1081.82 2238.478 142.636 601.004h718.477l220.708 379.704 216.013-379.704z"/><path fill="#41b883" d="M142.636 601.004l939.185 1637.474 939.186-1637.474h-375.675l-563.51 982.484-568.208-982.484z"/><path fill="#35495e" d="M513.188 601.004l568.207 987.23 563.511-987.23h-347.498l-216.013 379.704-220.708-379.704zM1607.792 1311.83l594.678 2.293 187.353-316.325-598.662 2.292zM2198.506 1909.57C2867.436 732.7 2939.502 605.426 2937.874 603.78c-.715-.723 45.303-1.314 102.262-1.314s103.562.428 103.562.951c0 .523-208.57 367.978-463.491 816.567L2216.715 2235.6l-102.1.596-102.102.596z"/><path fill="#41b883" d="M1680.563 2233.328c0-1.34 168.208-298.145 440.375-777.048a4135645.775 4135645.775 0 00337.619-594.19l146.13-257.25 170.746-.04 170.747-.04-5.536 9.741c-3.044 5.358-43.727 77.302-90.407 159.875-85.356 150.992-337.562 595.163-656.602 1156.373l-172 302.559-170.536.588c-93.795.322-170.536.069-170.536-.567z"/><path fill="#35495e" d="M1429.783 1625.351l594.679 2.292 187.353-316.324-598.662 2.292z"/><path fill="#41b883" d="M1524.207 1464.903l608.285 6.877 173.746-320.909h-619.072z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- 泥土基底 -->
+  <rect width="16" height="16" fill="#8a5a3b"/>
+  <!-- 泥土噪点 -->
+  <rect x="1" y="5" width="1" height="1" fill="#9c6b48"/>
+  <rect x="5" y="5" width="1" height="1" fill="#6d4527"/>
+  <rect x="9" y="6" width="1" height="1" fill="#9c6b48"/>
+  <rect x="13" y="5" width="1" height="1" fill="#6d4527"/>
+  <rect x="3" y="7" width="1" height="1" fill="#6d4527"/>
+  <rect x="7" y="7" width="1" height="1" fill="#9c6b48"/>
+  <rect x="11" y="8" width="1" height="1" fill="#6d4527"/>
+  <rect x="15" y="7" width="1" height="1" fill="#9c6b48"/>
+  <rect x="0" y="9" width="1" height="1" fill="#6d4527"/>
+  <rect x="4" y="10" width="1" height="1" fill="#9c6b48"/>
+  <rect x="8" y="10" width="1" height="1" fill="#9c6b48"/>
+  <rect x="6" y="11" width="1" height="1" fill="#6d4527"/>
+  <rect x="12" y="11" width="1" height="1" fill="#9c6b48"/>
+  <rect x="14" y="10" width="1" height="1" fill="#6d4527"/>
+  <rect x="2" y="12" width="1" height="1" fill="#9c6b48"/>
+  <rect x="5" y="13" width="1" height="1" fill="#6d4527"/>
+  <rect x="10" y="13" width="1" height="1" fill="#9c6b48"/>
+  <rect x="0" y="14" width="1" height="1" fill="#9c6b48"/>
+  <rect x="13" y="14" width="1" height="1" fill="#6d4527"/>
+  <rect x="7" y="15" width="1" height="1" fill="#9c6b48"/>
+  <rect x="15" y="12" width="1" height="1" fill="#6d4527"/>
+  <!-- 草皮层 -->
+  <rect width="16" height="3" fill="#7cb342"/>
+  <!-- 草皮明暗 -->
+  <rect x="2" y="0" width="1" height="1" fill="#8bc34a"/>
+  <rect x="6" y="0" width="2" height="1" fill="#8bc34a"/>
+  <rect x="11" y="0" width="1" height="1" fill="#689f38"/>
+  <rect x="14" y="0" width="1" height="1" fill="#8bc34a"/>
+  <rect x="0" y="1" width="1" height="1" fill="#689f38"/>
+  <rect x="4" y="1" width="1" height="1" fill="#8bc34a"/>
+  <rect x="8" y="1" width="1" height="1" fill="#689f38"/>
+  <rect x="12" y="1" width="1" height="1" fill="#8bc34a"/>
+  <rect x="1" y="2" width="1" height="1" fill="#8bc34a"/>
+  <rect x="5" y="2" width="1" height="1" fill="#689f38"/>
+  <rect x="9" y="2" width="1" height="1" fill="#8bc34a"/>
+  <rect x="13" y="2" width="1" height="1" fill="#689f38"/>
+  <!-- 锯齿草垂 -->
+  <rect x="0" y="3" width="2" height="1" fill="#7cb342"/>
+  <rect x="0" y="3" width="1" height="1" fill="#689f38"/>
+  <rect x="3" y="3" width="1" height="1" fill="#7cb342"/>
+  <rect x="5" y="3" width="2" height="1" fill="#7cb342"/>
+  <rect x="6" y="3" width="1" height="1" fill="#689f38"/>
+  <rect x="8" y="3" width="1" height="1" fill="#7cb342"/>
+  <rect x="10" y="3" width="2" height="1" fill="#7cb342"/>
+  <rect x="10" y="3" width="1" height="1" fill="#8bc34a"/>
+  <rect x="13" y="3" width="1" height="1" fill="#7cb342"/>
+  <rect x="15" y="3" width="1" height="1" fill="#7cb342"/>
+</svg>
