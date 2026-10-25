@@ -14,7 +14,7 @@
       <button class="hanoi-btn" :disabled="!canUndo" @click="undo">↩ 撤销</button>
       <button class="hanoi-btn" @click="reset(true)">↺ 重置</button>
       <button class="hanoi-btn" @click="phase === 'demo' ? skipDemo() : startDemo()">
-        {{ phase === 'demo' ? '⏭ 跳过演示' : '🎬 最优解演示' }}
+        {{ phase === 'demo' ? '⏭ 跳过演示' : '🎬 演示' }}
       </button>
     </div>
 
@@ -373,7 +373,7 @@ onBeforeUnmount(() => {
 }
 
 .hanoi-seg button {
-  padding: 4px 10px;
+  padding: 4px 9px;
   border: none;
   border-radius: 7px;
   background: transparent;
