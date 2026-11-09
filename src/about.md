@@ -10,6 +10,9 @@ icon: book
 
 本站将记录些我认为有用的东西，希望我能坚持下去。——2026年1月31日
 
+## 打卡记录
+
+<ContributionGraph />
 
 ```c++
 #include <iostream>

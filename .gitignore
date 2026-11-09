@@ -5,3 +5,6 @@ src/.vuepress/.temp/
 src/.vuepress/dist/
 
 .idea/
+
+# WorkBuddy 本地项目记忆（勿提交）
+.workbuddy/

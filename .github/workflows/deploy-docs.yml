@@ -37,6 +37,8 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
+          # 从最新的 Git 提交记录重新生成打卡数据
+          npm run docs:contrib
           npm run docs:build
           > src/.vuepress/dist/.nojekyll
 

@@ -8,6 +8,7 @@
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
+    "docs:contrib": "node scripts/gen-contributions.mjs",
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {
