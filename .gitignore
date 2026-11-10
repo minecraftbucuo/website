@@ -8,3 +8,7 @@ src/.vuepress/dist/
 
 # WorkBuddy 本地项目记忆（勿提交）
 .workbuddy/
+
+# WorkBuddy 删除拦截产生的回收站（本地临时）
+.Trash-0/
+.Trash-*/
